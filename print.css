@@ -1,0 +1,67 @@
+/*
+    Name: Yunxue Wu
+    Section: CSC 4370/6370 - Web Programming
+    Assignment: Homework 2 - My Movie Review (TMNT)
+    Description: Print stylesheet for clean printing.
+    File: print.css
+*/
+
+/* ===== PRINT STYLES ===== */
+body {
+    background-image: none;
+    background-color: white;
+    color: black;
+    font-size: 10pt;
+}
+
+/* Hide non-essential elements */
+#banner,
+#validator-links,
+#critical-thinking,
+#rating-section img {
+    display: none;
+}
+
+/* Make content frame full width and remove border */
+#content-frame {
+    width: 100%;
+    border: none;
+    display: block;
+}
+
+/* Make main column and sidebar stack */
+#main-column,
+#overview-column {
+    width: 100%;
+}
+
+/* Review boxes: avoid page breaks inside */
+.review-box {
+    background-color: white;
+    border: 1px solid black;
+    page-break-inside: avoid;
+}
+
+/* Overview: keep readable */
+#overview-column {
+    background-color: white;
+    color: black;
+}
+
+#overview-list a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Counter bar */
+#counter-bar {
+    background-color: white;
+    color: black;
+    border-top: 1px solid black;
+}
+
+/* Movie title */
+#movie-title {
+    font-size: 18pt;
+    margin: 10px 0;
+}
